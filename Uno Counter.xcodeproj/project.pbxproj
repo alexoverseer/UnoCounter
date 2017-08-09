@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EE8A761564CD394015BEC1B /* Pods_Uno_Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */; };
 		BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC56CD961F3B400C002D0122 /* AppDelegate.swift */; };
-		BC56CD991F3B400C002D0122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC56CD981F3B400C002D0122 /* ViewController.swift */; };
 		BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9A1F3B400C002D0122 /* Main.storyboard */; };
 		BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9D1F3B400C002D0122 /* Assets.xcassets */; };
 		BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */; };
+		BCDCDE111F3B49CB00F38C89 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE101F3B49CB00F38C89 /* General.swift */; };
+		BCDCDE131F3B4E2300F38C89 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE121F3B4E2300F38C89 /* GamesViewController.swift */; };
+		BCDCDE151F3B4E2F00F38C89 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE141F3B4E2F00F38C89 /* FriendsViewController.swift */; };
+		BCDCDE1A1F3B4FBE00F38C89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE191F3B4FBE00F38C89 /* SettingsViewController.swift */; };
+		BCDCDE1D1F3B4FD100F38C89 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE1B1F3B4FD100F38C89 /* SettingsTableViewCell.swift */; };
+		BCDCDE1E1F3B4FD100F38C89 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDCDE1C1F3B4FD100F38C89 /* SettingsTableViewCell.xib */; };
+		BCDCDE201F3B557500F38C89 /* ColorPreviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE1F1F3B557500F38C89 /* ColorPreviewTableViewController.swift */; };
+		BCE2D9631F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D9611F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld */; };
+		BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */; };
+		BCE2D96B1F3B449000DA8BB2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D96A1F3B449000DA8BB2 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uno_Counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56CD931F3B400C002D0122 /* Uno Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uno Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56CD961F3B400C002D0122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC56CD981F3B400C002D0122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC56CD9B1F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC56CD9D1F3B400C002D0122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC56CDA01F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC56CDA21F3B400C002D0122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCDCDE101F3B49CB00F38C89 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		BCDCDE121F3B4E2300F38C89 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		BCDCDE141F3B4E2F00F38C89 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		BCDCDE191F3B4FBE00F38C89 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BCDCDE1B1F3B4FD100F38C89 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		BCDCDE1C1F3B4FD100F38C89 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		BCDCDE1F1F3B557500F38C89 /* ColorPreviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPreviewTableViewController.swift; sourceTree = "<group>"; };
+		BCE2D9621F3B43EF00DA8BB2 /* UnoCounter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnoCounter.xcdatamodel; sourceTree = "<group>"; };
+		BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccesLayer.swift; sourceTree = "<group>"; };
+		BCE2D96A1F3B449000DA8BB2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D5EB07560AC6143DA9B6CE2D /* Pods-Uno Counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uno Counter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uno Counter/Pods-Uno Counter.debug.xcconfig"; sourceTree = "<group>"; };
+		D682BCE0F4654EF1661ECBB2 /* Pods-Uno Counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uno Counter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uno Counter/Pods-Uno Counter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE8A761564CD394015BEC1B /* Pods_Uno_Counter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16991584CDC5A19FA8143F7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5EB07560AC6143DA9B6CE2D /* Pods-Uno Counter.debug.xcconfig */,
+				D682BCE0F4654EF1661ECBB2 /* Pods-Uno Counter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC56CD8A1F3B400C002D0122 = {
 			isa = PBXGroup;
 			children = (
 				BC56CD951F3B400C002D0122 /* Uno Counter */,
 				BC56CD941F3B400C002D0122 /* Products */,
+				16991584CDC5A19FA8143F7A /* Pods */,
+				FA9E2CB6A1BD595214FA8482 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +89,86 @@
 			isa = PBXGroup;
 			children = (
 				BC56CD961F3B400C002D0122 /* AppDelegate.swift */,
-				BC56CD981F3B400C002D0122 /* ViewController.swift */,
+				BCE2D95C1F3B420400DA8BB2 /* Controllers */,
+				BCE2D95D1F3B420400DA8BB2 /* Database */,
+				BCE2D95E1F3B420400DA8BB2 /* Extensions */,
+				BCE2D95F1F3B420400DA8BB2 /* Protocols */,
+				BCE2D9601F3B420400DA8BB2 /* Structs */,
+				BCDCDE041F3B480B00F38C89 /* Resources */,
 				BC56CD9A1F3B400C002D0122 /* Main.storyboard */,
 				BC56CD9D1F3B400C002D0122 /* Assets.xcassets */,
 				BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */,
 				BC56CDA21F3B400C002D0122 /* Info.plist */,
 			);
 			path = "Uno Counter";
+			sourceTree = "<group>";
+		};
+		BCDCDE041F3B480B00F38C89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCDCDE181F3B4FBE00F38C89 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCDCDE1B1F3B4FD100F38C89 /* SettingsTableViewCell.swift */,
+				BCDCDE1C1F3B4FD100F38C89 /* SettingsTableViewCell.xib */,
+				BCDCDE191F3B4FBE00F38C89 /* SettingsViewController.swift */,
+				BCDCDE1F1F3B557500F38C89 /* ColorPreviewTableViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		BCE2D95C1F3B420400DA8BB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCDCDE121F3B4E2300F38C89 /* GamesViewController.swift */,
+				BCDCDE141F3B4E2F00F38C89 /* FriendsViewController.swift */,
+				BCDCDE181F3B4FBE00F38C89 /* SettingsViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BCE2D95D1F3B420400DA8BB2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BCE2D9611F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld */,
+				BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */,
+				BCE2D96A1F3B449000DA8BB2 /* CoreDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		BCE2D95E1F3B420400DA8BB2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BCDCDE101F3B49CB00F38C89 /* General.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCE2D95F1F3B420400DA8BB2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BCE2D9601F3B420400DA8BB2 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		FA9E2CB6A1BD595214FA8482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC56CDA51F3B400C002D0122 /* Build configuration list for PBXNativeTarget "Uno Counter" */;
 			buildPhases = (
+				97D256D484811987CBF6EDF3 /* [CP] Check Pods Manifest.lock */,
 				BC56CD8F1F3B400C002D0122 /* Sources */,
 				BC56CD901F3B400C002D0122 /* Frameworks */,
 				BC56CD911F3B400C002D0122 /* Resources */,
+				ED41F04719C33F807D072599 /* [CP] Embed Pods Frameworks */,
+				820463CD2EC63CEB33A14C5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,19 +236,76 @@
 			files = (
 				BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */,
 				BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */,
+				BCDCDE1E1F3B4FD100F38C89 /* SettingsTableViewCell.xib in Resources */,
 				BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		820463CD2EC63CEB33A14C5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uno Counter/Pods-Uno Counter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D256D484811987CBF6EDF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED41F04719C33F807D072599 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uno Counter/Pods-Uno Counter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC56CD8F1F3B400C002D0122 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC56CD991F3B400C002D0122 /* ViewController.swift in Sources */,
+				BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */,
 				BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */,
+				BCDCDE1D1F3B4FD100F38C89 /* SettingsTableViewCell.swift in Sources */,
+				BCE2D96B1F3B449000DA8BB2 /* CoreDataManager.swift in Sources */,
+				BCDCDE201F3B557500F38C89 /* ColorPreviewTableViewController.swift in Sources */,
+				BCE2D9631F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld in Sources */,
+				BCDCDE151F3B4E2F00F38C89 /* FriendsViewController.swift in Sources */,
+				BCDCDE131F3B4E2300F38C89 /* GamesViewController.swift in Sources */,
+				BCDCDE111F3B49CB00F38C89 /* General.swift in Sources */,
+				BCDCDE1A1F3B4FBE00F38C89 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +428,7 @@
 		};
 		BC56CDA61F3B400C002D0122 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5EB07560AC6143DA9B6CE2D /* Pods-Uno Counter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XY9H4LH9U8;
@@ -274,6 +442,7 @@
 		};
 		BC56CDA71F3B400C002D0122 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D682BCE0F4654EF1661ECBB2 /* Pods-Uno Counter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XY9H4LH9U8;
@@ -304,8 +473,22 @@
 				BC56CDA71F3B400C002D0122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCE2D9611F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCE2D9621F3B43EF00DA8BB2 /* UnoCounter.xcdatamodel */,
+			);
+			currentVersion = BCE2D9621F3B43EF00DA8BB2 /* UnoCounter.xcdatamodel */;
+			path = UnoCounter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC56CD8B1F3B400C002D0122 /* Project object */;
 }
