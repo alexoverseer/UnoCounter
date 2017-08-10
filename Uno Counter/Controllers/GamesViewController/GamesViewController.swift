@@ -10,9 +10,16 @@ import UIKit
 
 class GamesViewController: UIViewController {
 
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
         
+        super.setEditing(editing, animated: animated)
     }
 }

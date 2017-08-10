@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ChameleonFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,17 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         setAppAppearance()
+        checkApplicationFirstLaunch()
+        print("iOS📱: \(FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last!)")
+    
         return true
-    }
-
-    func setAppAppearance() {
-        
-        if let appPrimaryColor = UserDefaults.standard.color(forKey:Constants.appPrimaryColor) {
-            Chameleon.setGlobalThemeUsingPrimaryColor(appPrimaryColor, with: .contrast)
-        } else {
-            Chameleon.setGlobalThemeUsingPrimaryColor(.Turquoise, with: .contrast)
-        }
-        UIApplication.shared.statusBarStyle = (UIStatusBarStyleContrast)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

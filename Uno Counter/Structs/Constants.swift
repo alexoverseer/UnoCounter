@@ -11,4 +11,6 @@ import Foundation
 struct Constants {
     
     static let appPrimaryColor = "appPrimaryColor"
+    static let applicationFirstLaunch = "applicationFirstLaunch"
+    static let userPhotosFolder = "UserPhotosFolder"
 }

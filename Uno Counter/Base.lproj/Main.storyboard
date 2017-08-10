@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Friends View Controller-->
+        <!--Players-->
         <scene sceneID="dau-5j-26A">
             <objects>
-                <viewController storyboardIdentifier="FriendsViewController" automaticallyAdjustsScrollViewInsets="NO" id="Kkv-Xp-oNq" customClass="FriendsViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FriendsViewController" automaticallyAdjustsScrollViewInsets="NO" id="Kkv-Xp-oNq" customClass="PlayersViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qhe-M8-pUQ"/>
                         <viewControllerLayoutGuide type="bottom" id="O7e-WT-rMN"/>
@@ -20,15 +21,114 @@
                     <view key="view" contentMode="scaleToFill" id="tUh-Nl-9KX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kQ6-vF-t7e">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kkv-Xp-oNq" id="qdz-3I-Qjy"/>
+                                    <outlet property="delegate" destination="Kkv-Xp-oNq" id="NF0-d2-I3b"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zew-QL-gxd">
+                                <rect key="frame" x="140.5" y="321.5" width="94" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O7e-WT-rMN" firstAttribute="top" secondItem="kQ6-vF-t7e" secondAttribute="bottom" id="8YV-n0-UAv"/>
+                            <constraint firstItem="Zew-QL-gxd" firstAttribute="centerX" secondItem="tUh-Nl-9KX" secondAttribute="centerX" id="BEt-cr-RLj"/>
+                            <constraint firstItem="kQ6-vF-t7e" firstAttribute="top" secondItem="qhe-M8-pUQ" secondAttribute="bottom" id="kHv-x1-BUZ"/>
+                            <constraint firstAttribute="trailing" secondItem="kQ6-vF-t7e" secondAttribute="trailing" id="rIZ-1C-gB6"/>
+                            <constraint firstItem="kQ6-vF-t7e" firstAttribute="leading" secondItem="tUh-Nl-9KX" secondAttribute="leading" id="rb7-bM-uv3"/>
+                            <constraint firstItem="Zew-QL-gxd" firstAttribute="centerY" secondItem="tUh-Nl-9KX" secondAttribute="centerY" id="xsH-jL-cXL"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jU8-e0-e6a"/>
+                    <navigationItem key="navigationItem" title="Players" id="jU8-e0-e6a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CT3-4c-zLo">
+                            <connections>
+                                <segue destination="e0W-bN-F9u" kind="show" id="3n5-L9-dt4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noPlayersLabel" destination="Zew-QL-gxd" id="6ma-ba-6Dl"/>
+                        <outlet property="playersTableView" destination="kQ6-vF-t7e" id="7ub-Yh-5gM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwa-Az-psf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1996" y="-176.76161919040482"/>
         </scene>
-        <!--Games View Controller-->
+        <!--Add Player View Controller-->
+        <scene sceneID="S6Y-5h-N0I">
+            <objects>
+                <viewController storyboardIdentifier="AddPlayerViewController" hidesBottomBarWhenPushed="YES" id="e0W-bN-F9u" customClass="AddPlayerViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xQH-AC-moX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ioz-6R-gl1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LUs-Yn-xQv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntU-IY-7f0">
+                                <rect key="frame" x="16" y="72" width="112" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. John Smith" textAlignment="natural" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fvx-u9-1sN">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="e0W-bN-F9u" id="8QL-5l-IXm"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ntU-IY-7f0" firstAttribute="top" secondItem="xQH-AC-moX" secondAttribute="bottom" constant="8" id="WFT-QD-ct8"/>
+                            <constraint firstItem="fvx-u9-1sN" firstAttribute="trailing" secondItem="LUs-Yn-xQv" secondAttribute="trailingMargin" id="gel-8U-UdV"/>
+                            <constraint firstItem="fvx-u9-1sN" firstAttribute="leading" secondItem="LUs-Yn-xQv" secondAttribute="leadingMargin" id="hjh-Zh-S3O"/>
+                            <constraint firstItem="fvx-u9-1sN" firstAttribute="top" secondItem="ntU-IY-7f0" secondAttribute="bottom" constant="8" id="hxd-I0-oNW"/>
+                            <constraint firstItem="ntU-IY-7f0" firstAttribute="leading" secondItem="LUs-Yn-xQv" secondAttribute="leading" constant="16" id="pC1-zF-FlQ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="playerNameTextField" destination="fvx-u9-1sN" id="c65-Xs-9kL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vE-MV-qn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.8000000000002" y="-177.66116941529236"/>
+        </scene>
+        <!--Player Preview View Controller-->
+        <scene sceneID="eWz-tm-vqZ">
+            <objects>
+                <viewController storyboardIdentifier="PlayerPreviewViewController" hidesBottomBarWhenPushed="YES" id="WW0-yb-P34" customClass="PlayerPreviewViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hjt-Hp-S2o"/>
+                        <viewControllerLayoutGuide type="bottom" id="hra-wz-x1l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="35V-kF-aXq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOC-3L-uZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3366" y="-177"/>
+        </scene>
+        <!--Games-->
         <scene sceneID="lVl-fz-Ssz">
             <objects>
                 <viewController storyboardIdentifier="GamesViewController" automaticallyAdjustsScrollViewInsets="NO" id="fQB-Wc-dhK" customClass="GamesViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,9 +139,31 @@
                     <view key="view" contentMode="scaleToFill" id="Ijj-a5-kR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7O3-UP-qcd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcb-0u-mjH">
+                                <rect key="frame" x="141.5" y="322" width="93" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7O3-UP-qcd" firstAttribute="top" secondItem="hS1-lO-kgJ" secondAttribute="bottom" id="37y-4f-pGA"/>
+                            <constraint firstItem="hcb-0u-mjH" firstAttribute="centerY" secondItem="Ijj-a5-kR3" secondAttribute="centerY" id="KDL-W0-1lK"/>
+                            <constraint firstItem="7O3-UP-qcd" firstAttribute="leading" secondItem="Ijj-a5-kR3" secondAttribute="leading" id="O8U-Xu-ZTX"/>
+                            <constraint firstAttribute="trailing" secondItem="7O3-UP-qcd" secondAttribute="trailing" id="OdF-qA-46V"/>
+                            <constraint firstItem="hcb-0u-mjH" firstAttribute="centerX" secondItem="Ijj-a5-kR3" secondAttribute="centerX" id="nNe-37-ueA"/>
+                            <constraint firstItem="D95-fF-kCo" firstAttribute="top" secondItem="7O3-UP-qcd" secondAttribute="bottom" id="wxc-m8-hTy"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Bkf-TU-BU3"/>
+                    <navigationItem key="navigationItem" title="Games" id="Bkf-TU-BU3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kal-10-NhT"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUs-wE-DaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,11 +188,11 @@
             </objects>
             <point key="canvasLocation" x="105" y="-503"/>
         </scene>
-        <!--Friends-->
+        <!--Players-->
         <scene sceneID="GYl-Kh-gMr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bsg-s9-2PU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="Lri-qj-1Wb"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="tabBarIconFriends" id="Lri-qj-1Wb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rR6-bD-7aB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -85,7 +207,7 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="-176.76161919040482"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="GF1-rb-LSW">
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" automaticallyAdjustsScrollViewInsets="NO" id="h6A-3H-KV9" customClass="SettingsViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +236,7 @@
                             <constraint firstItem="gkR-90-L25" firstAttribute="top" secondItem="lRF-wQ-GdV" secondAttribute="bottom" id="bEi-hE-ChK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MC3-XR-CE0"/>
+                    <navigationItem key="navigationItem" title="Settings" id="MC3-XR-CE0"/>
                     <connections>
                         <outlet property="settingsTableView" destination="gkR-90-L25" id="c9V-ma-zvB"/>
                     </connections>
@@ -159,7 +281,7 @@
         <scene sceneID="Ych-Ev-TZP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vWH-96-gTc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" id="mqh-kq-qCU"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="tabBarIconGame" id="mqh-kq-qCU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GB9-4S-vKQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -178,7 +300,7 @@
         <scene sceneID="mHc-gl-18q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bMN-N0-0NU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="YlB-lM-lQI"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="tabBarIconSettings" id="YlB-lM-lQI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hb6-GM-dmO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -194,4 +316,9 @@
             <point key="canvasLocation" x="1056.8" y="494.30284857571218"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabBarIconFriends" width="32" height="32"/>
+        <image name="tabBarIconGame" width="32" height="32"/>
+        <image name="tabBarIconSettings" width="26" height="26"/>
+    </resources>
 </document>
