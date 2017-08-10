@@ -34,3 +34,37 @@ extension UIColor {
     open class var Pomegranate:  UIColor { get {return UIColor.RGBA(R: 192, G: 57,  B: 43,  A: 1)}}
     open class var Silver:       UIColor { get {return UIColor.RGBA(R: 189, G: 195, B: 199, A: 1)}}
 }
+
+extension UIColor {
+    convenience init(_ hex6: UInt32) {
+        let divisor = CGFloat(255)
+        let red = CGFloat((hex6 & 0xFF0000) >> 16) / divisor
+        let green = CGFloat((hex6 & 0x00FF00) >> 8) / divisor
+        let blue = CGFloat((hex6 & 0x0000FF) >> 0) / divisor
+        self.init(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+}
+
+extension UIApplication {
+    func updateAppAppearance() {
+        
+        for window in UIApplication.shared.windows {
+            for view in window.subviews {
+                view.removeFromSuperview()
+                window.addSubview(view)
+            }
+            // update the status bar
+            window.rootViewController?.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+}
+
+extension UserDefaults {
+    func setColor(_ color: UIColor, forKey key: String) {
+        set(NSKeyedArchiver.archivedData(withRootObject: color), forKey: key)
+    }
+    func color(forKey key: String) -> UIColor? {
+        guard let data = data(forKey: key) else { return nil }
+        return NSKeyedUnarchiver.unarchiveObject(with: data) as? UIColor
+    }
+}

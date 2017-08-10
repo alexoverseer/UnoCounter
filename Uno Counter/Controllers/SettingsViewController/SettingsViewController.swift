@@ -9,7 +9,7 @@
 import UIKit
 
 enum SettingsIndex : Int {
-    case appColor = 0, testEnum
+    case appColor = 0
 }
 
 class SettingsViewController: UIViewController {
@@ -37,7 +37,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 2
+        return 1
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,8 +47,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         switch SettingsIndex(rawValue: indexPath.row)! {
         case .appColor:
             cell.settingsTitle.text = "App Color"
-        case .testEnum:
-            cell.settingsTitle.text = "Test"
+            cell.settingsImage.image = UIImage.init(named: "settingsIconBrush")
         }
         
         return cell
@@ -67,12 +66,8 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch SettingsIndex(rawValue: indexPath.row)! {
         case .appColor:
-            
             let controller = self.storyboard?.instantiateViewController(withIdentifier: ColorPreviewTableViewController.identifier) as! ColorPreviewTableViewController
             self.navigationController?.pushViewController(controller, animated: true)
-            
-        case .testEnum:
-            print("salut")
         }
     }
 }

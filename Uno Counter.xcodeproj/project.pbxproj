@@ -12,13 +12,17 @@
 		BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9A1F3B400C002D0122 /* Main.storyboard */; };
 		BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9D1F3B400C002D0122 /* Assets.xcassets */; };
 		BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */; };
+		BC693ADB1F3C4A4100EC8564 /* ColorPreviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693ADA1F3C4A4100EC8564 /* ColorPreviewTableViewController.swift */; };
+		BC693ADE1F3C4A6500EC8564 /* ColorPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693ADC1F3C4A6500EC8564 /* ColorPreviewTableViewCell.swift */; };
+		BC693ADF1F3C4A6500EC8564 /* ColorPreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC693ADD1F3C4A6500EC8564 /* ColorPreviewTableViewCell.xib */; };
+		BC693AE11F3C53CB00EC8564 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693AE01F3C53CB00EC8564 /* Constants.swift */; };
+		BC693AE31F3C59AB00EC8564 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693AE21F3C59AB00EC8564 /* CustomColor.swift */; };
 		BCDCDE111F3B49CB00F38C89 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE101F3B49CB00F38C89 /* General.swift */; };
 		BCDCDE131F3B4E2300F38C89 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE121F3B4E2300F38C89 /* GamesViewController.swift */; };
 		BCDCDE151F3B4E2F00F38C89 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE141F3B4E2F00F38C89 /* FriendsViewController.swift */; };
 		BCDCDE1A1F3B4FBE00F38C89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE191F3B4FBE00F38C89 /* SettingsViewController.swift */; };
 		BCDCDE1D1F3B4FD100F38C89 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE1B1F3B4FD100F38C89 /* SettingsTableViewCell.swift */; };
 		BCDCDE1E1F3B4FD100F38C89 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDCDE1C1F3B4FD100F38C89 /* SettingsTableViewCell.xib */; };
-		BCDCDE201F3B557500F38C89 /* ColorPreviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE1F1F3B557500F38C89 /* ColorPreviewTableViewController.swift */; };
 		BCE2D9631F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D9611F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld */; };
 		BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */; };
 		BCE2D96B1F3B449000DA8BB2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D96A1F3B449000DA8BB2 /* CoreDataManager.swift */; };
@@ -32,13 +36,17 @@
 		BC56CD9D1F3B400C002D0122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC56CDA01F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC56CDA21F3B400C002D0122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC693ADA1F3C4A4100EC8564 /* ColorPreviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPreviewTableViewController.swift; sourceTree = "<group>"; };
+		BC693ADC1F3C4A6500EC8564 /* ColorPreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPreviewTableViewCell.swift; sourceTree = "<group>"; };
+		BC693ADD1F3C4A6500EC8564 /* ColorPreviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPreviewTableViewCell.xib; sourceTree = "<group>"; };
+		BC693AE01F3C53CB00EC8564 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC693AE21F3C59AB00EC8564 /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		BCDCDE101F3B49CB00F38C89 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		BCDCDE121F3B4E2300F38C89 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		BCDCDE141F3B4E2F00F38C89 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		BCDCDE191F3B4FBE00F38C89 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BCDCDE1B1F3B4FD100F38C89 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		BCDCDE1C1F3B4FD100F38C89 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
-		BCDCDE1F1F3B557500F38C89 /* ColorPreviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPreviewTableViewController.swift; sourceTree = "<group>"; };
 		BCE2D9621F3B43EF00DA8BB2 /* UnoCounter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnoCounter.xcdatamodel; sourceTree = "<group>"; };
 		BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccesLayer.swift; sourceTree = "<group>"; };
 		BCE2D96A1F3B449000DA8BB2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -95,12 +103,31 @@
 				BCE2D95F1F3B420400DA8BB2 /* Protocols */,
 				BCE2D9601F3B420400DA8BB2 /* Structs */,
 				BCDCDE041F3B480B00F38C89 /* Resources */,
+				BC693AD61F3C43D000EC8564 /* Subclasses */,
 				BC56CD9A1F3B400C002D0122 /* Main.storyboard */,
-				BC56CD9D1F3B400C002D0122 /* Assets.xcassets */,
 				BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */,
+				BC56CD9D1F3B400C002D0122 /* Assets.xcassets */,
 				BC56CDA21F3B400C002D0122 /* Info.plist */,
 			);
 			path = "Uno Counter";
+			sourceTree = "<group>";
+		};
+		BC693AD61F3C43D000EC8564 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				BC693AE21F3C59AB00EC8564 /* CustomColor.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		BC693AD91F3C4A4100EC8564 /* ColorPreviewTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC693ADC1F3C4A6500EC8564 /* ColorPreviewTableViewCell.swift */,
+				BC693ADD1F3C4A6500EC8564 /* ColorPreviewTableViewCell.xib */,
+				BC693ADA1F3C4A4100EC8564 /* ColorPreviewTableViewController.swift */,
+			);
+			path = ColorPreviewTableViewController;
 			sourceTree = "<group>";
 		};
 		BCDCDE041F3B480B00F38C89 /* Resources */ = {
@@ -116,7 +143,7 @@
 				BCDCDE1B1F3B4FD100F38C89 /* SettingsTableViewCell.swift */,
 				BCDCDE1C1F3B4FD100F38C89 /* SettingsTableViewCell.xib */,
 				BCDCDE191F3B4FBE00F38C89 /* SettingsViewController.swift */,
-				BCDCDE1F1F3B557500F38C89 /* ColorPreviewTableViewController.swift */,
+				BC693AD91F3C4A4100EC8564 /* ColorPreviewTableViewController */,
 			);
 			path = SettingsViewController;
 			sourceTree = "<group>";
@@ -159,6 +186,7 @@
 		BCE2D9601F3B420400DA8BB2 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				BC693AE01F3C53CB00EC8564 /* Constants.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -237,6 +265,7 @@
 				BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */,
 				BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */,
 				BCDCDE1E1F3B4FD100F38C89 /* SettingsTableViewCell.xib in Resources */,
+				BC693ADF1F3C4A6500EC8564 /* ColorPreviewTableViewCell.xib in Resources */,
 				BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,13 +328,16 @@
 				BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */,
 				BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */,
 				BCDCDE1D1F3B4FD100F38C89 /* SettingsTableViewCell.swift in Sources */,
+				BC693AE31F3C59AB00EC8564 /* CustomColor.swift in Sources */,
 				BCE2D96B1F3B449000DA8BB2 /* CoreDataManager.swift in Sources */,
-				BCDCDE201F3B557500F38C89 /* ColorPreviewTableViewController.swift in Sources */,
+				BC693ADB1F3C4A4100EC8564 /* ColorPreviewTableViewController.swift in Sources */,
 				BCE2D9631F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld in Sources */,
 				BCDCDE151F3B4E2F00F38C89 /* FriendsViewController.swift in Sources */,
 				BCDCDE131F3B4E2300F38C89 /* GamesViewController.swift in Sources */,
+				BC693ADE1F3C4A6500EC8564 /* ColorPreviewTableViewCell.swift in Sources */,
 				BCDCDE111F3B49CB00F38C89 /* General.swift in Sources */,
 				BCDCDE1A1F3B4FBE00F38C89 /* SettingsViewController.swift in Sources */,
+				BC693AE11F3C53CB00EC8564 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

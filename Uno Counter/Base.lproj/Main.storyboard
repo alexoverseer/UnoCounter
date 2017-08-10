@@ -126,7 +126,7 @@
         <!--Color Preview Table View Controller-->
         <scene sceneID="ieM-bm-Fd1">
             <objects>
-                <viewController storyboardIdentifier="ColorPreviewTableViewController" id="zQ1-KJ-oQF" customClass="ColorPreviewTableViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ColorPreviewTableViewController" hidesBottomBarWhenPushed="YES" id="zQ1-KJ-oQF" customClass="ColorPreviewTableViewController" customModule="Uno_Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qRo-Fe-Ckz"/>
                         <viewControllerLayoutGuide type="bottom" id="IPZ-rz-w4p"/>
@@ -135,8 +135,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pn8-K1-dyZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pn8-K1-dyZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="zQ1-KJ-oQF" id="Y6E-q1-PNo"/>
@@ -145,12 +146,6 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Pn8-K1-dyZ" firstAttribute="top" secondItem="QNK-2u-dTW" secondAttribute="top" id="2K6-vk-0r8"/>
-                            <constraint firstItem="IPZ-rz-w4p" firstAttribute="top" secondItem="Pn8-K1-dyZ" secondAttribute="bottom" id="JSV-wC-X6g"/>
-                            <constraint firstAttribute="trailing" secondItem="Pn8-K1-dyZ" secondAttribute="trailing" id="dc8-lr-rQy"/>
-                            <constraint firstItem="Pn8-K1-dyZ" firstAttribute="leading" secondItem="QNK-2u-dTW" secondAttribute="leading" id="xdV-sQ-mxs"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="colorPreviewTableView" destination="Pn8-K1-dyZ" id="kmF-Uc-6TI"/>
