@@ -35,7 +35,6 @@ class ColorPreviewTableViewController: UIViewController {
         
         didSet {
             colorPreviewTableView.tableFooterView = UIView()
-            colorPreviewTableView.register(UINib.init(nibName: ColorPreviewTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ColorPreviewTableViewCell.identifier)
         }
     }
 }
@@ -74,4 +73,22 @@ extension ColorPreviewTableViewController: UITableViewDelegate, UITableViewDataS
         UserDefaults.standard.synchronize()
         UIApplication.shared.updateAppAppearance()
     }
+}
+
+class CustomColor: NSObject {
+    
+    var name: String!
+    var color: UIColor!
+    
+    init(name: String, color: UIColor) {
+        self.name = name
+        self.color = color
+    }
+}
+
+class ColorPreviewTableViewCell: UITableViewCell {
+    
+    static let identifier = String(describing: ColorPreviewTableViewCell.self)
+    
+    @IBOutlet weak var colorNameLabel: UILabel!
 }

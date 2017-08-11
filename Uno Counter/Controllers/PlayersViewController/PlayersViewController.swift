@@ -17,7 +17,6 @@ class PlayersViewController: UIViewController {
         didSet {
             
             playersTableView.tableFooterView = UIView()
-            playersTableView.register(UINib.init(nibName: PlayersTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: PlayersTableViewCell.identifier)
         }
     }
     
@@ -86,5 +85,27 @@ extension PlayersViewController: UITableViewDataSource, UITableViewDelegate {
             tableView.deleteRows(at: [indexPath], with: .automatic)
             playersArray.count > 0 ? (noPlayersLabel.isHidden = true) : (noPlayersLabel.isHidden = false)
         }
+    }
+}
+
+class PlayersTableViewCell: UITableViewCell {
+    
+    static let identifier = String(describing: PlayersTableViewCell.self)
+    
+    //MARK: - Outlets
+    
+    @IBOutlet weak var playerImageView: UIImageView!
+    @IBOutlet weak var playerNameLabel: UILabel!
+    @IBOutlet weak var playedTimesLabel: UILabel!
+    
+    func setCellValuesWithPlayer(player: Player) {
+        
+        playerNameLabel.text = player.name
+        if player.playedCount > 0 {
+            playedTimesLabel.text = "Played for \(player.playedCount) times"
+        } else {
+            playedTimesLabel.text = "Has not played yet!"
+        }
+        //TODO: Add player Image
     }
 }

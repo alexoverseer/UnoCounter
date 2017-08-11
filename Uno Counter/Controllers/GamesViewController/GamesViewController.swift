@@ -23,3 +23,8 @@ class GamesViewController: UIViewController {
         super.setEditing(editing, animated: animated)
     }
 }
+
+class GamesTableViewCell: UITableViewCell {
+    
+    static let identifier = String(describing: GamesTableViewCell.self)
+}

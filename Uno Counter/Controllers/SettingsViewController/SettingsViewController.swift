@@ -20,7 +20,6 @@ class SettingsViewController: UIViewController {
         
         didSet {
             settingsTableView.tableFooterView = UIView()
-            settingsTableView.register(UINib.init(nibName: SettingsTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: SettingsTableViewCell.identifier)
         }
     }
     
@@ -69,4 +68,15 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
+}
+
+
+class SettingsTableViewCell: UITableViewCell {
+    
+    static let identifier = String(describing: SettingsTableViewCell.self)
+    
+    //MARK: - Outlets
+    
+    @IBOutlet public weak var settingsImage: UIImageView!
+    @IBOutlet public weak var settingsTitle: UILabel!
 }
