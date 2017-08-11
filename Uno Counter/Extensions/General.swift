@@ -147,3 +147,12 @@ extension AppDelegate {
         }
     }
 }
+
+func showAlert(title: String?, message: String?) {
+    
+    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+    let controller = UIApplication.shared.keyWindow?.rootViewController
+    controller?.present(alert, animated: true, completion: nil)
+}

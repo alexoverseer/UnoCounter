@@ -18,6 +18,7 @@ extension Game {
 
     @NSManaged public var name: String?
     @NSManaged public var finalScore: Int32
+    @NSManaged public var numberOfPlayers: Int32
     @NSManaged public var gameID: String?
     @NSManaged public var players: NSSet?
 

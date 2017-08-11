@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7EE8A761564CD394015BEC1B /* Pods_Uno_Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */; };
+		BC28BFA11F3DD69D00E45D11 /* SelectPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28BFA01F3DD69D00E45D11 /* SelectPlayersViewController.swift */; };
 		BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC56CD961F3B400C002D0122 /* AppDelegate.swift */; };
 		BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9A1F3B400C002D0122 /* Main.storyboard */; };
 		BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9D1F3B400C002D0122 /* Assets.xcassets */; };
 		BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */; };
+		BC5740CD1F3DA8F800ABFDBC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5740CC1F3DA8F800ABFDBC /* ShadowView.swift */; };
+		BC5740CF1F3DB0E800ABFDBC /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5740CE1F3DB0E800ABFDBC /* CreateGameViewController.swift */; };
 		BC693AE11F3C53CB00EC8564 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693AE01F3C53CB00EC8564 /* Constants.swift */; };
 		BC693B0B1F3C88E100EC8564 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B071F3C88E100EC8564 /* Game+CoreDataClass.swift */; };
 		BC693B0C1F3C88E100EC8564 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B081F3C88E100EC8564 /* Game+CoreDataProperties.swift */; };
@@ -31,12 +34,15 @@
 
 /* Begin PBXFileReference section */
 		612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uno_Counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC28BFA01F3DD69D00E45D11 /* SelectPlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlayersViewController.swift; sourceTree = "<group>"; };
 		BC56CD931F3B400C002D0122 /* Uno Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uno Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56CD961F3B400C002D0122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC56CD9B1F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC56CD9D1F3B400C002D0122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC56CDA01F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC56CDA21F3B400C002D0122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5740CC1F3DA8F800ABFDBC /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		BC5740CE1F3DB0E800ABFDBC /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
 		BC693AE01F3C53CB00EC8564 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC693B071F3C88E100EC8564 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC693B081F3C88E100EC8564 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 				BCE2D95F1F3B420400DA8BB2 /* Protocols */,
 				BCE2D9601F3B420400DA8BB2 /* Structs */,
 				BCDCDE041F3B480B00F38C89 /* Resources */,
+				BC5740D21F3DB6D100ABFDBC /* ReusableViews */,
 				BC693AD61F3C43D000EC8564 /* Subclasses */,
 				BC56CD9A1F3B400C002D0122 /* Main.storyboard */,
 				BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */,
@@ -114,9 +121,17 @@
 			path = "Uno Counter";
 			sourceTree = "<group>";
 		};
+		BC5740D21F3DB6D100ABFDBC /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
 		BC693AD61F3C43D000EC8564 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				BC5740CC1F3DA8F800ABFDBC /* ShadowView.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -146,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				BC693B171F3C985800EC8564 /* GamesViewController.swift */,
+				BC5740CE1F3DB0E800ABFDBC /* CreateGameViewController.swift */,
+				BC28BFA01F3DD69D00E45D11 /* SelectPlayersViewController.swift */,
 			);
 			path = GamesViewController;
 			sourceTree = "<group>";
@@ -342,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5740CF1F3DB0E800ABFDBC /* CreateGameViewController.swift in Sources */,
 				BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */,
 				BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */,
 				BC693B0E1F3C88E100EC8564 /* Player+CoreDataProperties.swift in Sources */,
@@ -357,6 +375,8 @@
 				BC693AE11F3C53CB00EC8564 /* Constants.swift in Sources */,
 				BCD6188E1F3D947E00778015 /* ColorPreviewTableViewController.swift in Sources */,
 				BC693B151F3C981C00EC8564 /* PlayersViewController.swift in Sources */,
+				BC28BFA11F3DD69D00E45D11 /* SelectPlayersViewController.swift in Sources */,
+				BC5740CD1F3DA8F800ABFDBC /* ShadowView.swift in Sources */,
 				BCD6188F1F3D947E00778015 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XY9H4LH9U8;
 				INFOPLIST_FILE = "Uno Counter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SIC.Uno-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XY9H4LH9U8;
 				INFOPLIST_FILE = "Uno Counter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SIC.Uno-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";

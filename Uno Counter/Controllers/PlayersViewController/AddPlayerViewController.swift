@@ -29,7 +29,6 @@ class AddPlayerViewController: UIViewController, UITextFieldDelegate {
         
         super.viewDidLoad()
         addSaveButton()
-        title = "Add new player"
         
         self.view.addTapGestureRecognizer {
             self.view.endEditing(true)

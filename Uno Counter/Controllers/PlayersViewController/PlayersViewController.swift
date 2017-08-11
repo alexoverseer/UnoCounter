@@ -22,7 +22,7 @@ class PlayersViewController: UIViewController {
     
     //MARK: - Properties
     
-    var playersArray = [Player]()
+    fileprivate var playersArray = [Player]()
     
     //MARK: - Lifecycle
     
@@ -102,9 +102,9 @@ class PlayersTableViewCell: UITableViewCell {
         
         playerNameLabel.text = player.name
         if player.playedCount > 0 {
-            playedTimesLabel.text = "Played for \(player.playedCount) times"
+            playedTimesLabel?.text = "Played for \(player.playedCount) times"
         } else {
-            playedTimesLabel.text = "Has not played yet!"
+            playedTimesLabel?.text = "Has not played yet!"
         }
         //TODO: Add player Image
     }
