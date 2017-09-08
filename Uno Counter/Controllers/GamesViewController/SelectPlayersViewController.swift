@@ -12,7 +12,7 @@ class SelectPlayersViewController: UIViewController {
 
     static let identifier = String(describing: SelectPlayersViewController.self)
     
-    //MARK: - Outlets
+    // MARK: - Outlets
     
     @IBOutlet weak var selectPlayersTableView: UITableView! {
         didSet {
