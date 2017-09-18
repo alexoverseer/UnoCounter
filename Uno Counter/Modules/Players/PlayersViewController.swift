@@ -1,16 +1,10 @@
-//
-//  FriendsViewController.swift
-//  Uno Counter
-//
-//  Created by Alexandr Pavlov on 8/9/17.
-//  Copyright © 2017 Softintercom. All rights reserved.
-//
-
 import UIKit
 
-class PlayersViewController: UIViewController {
+final class PlayersViewController: UIViewController, StoryboardInstantiable {
 
-    //MARK: - Outlets
+    static var storyboardName = "PlayersViewController"
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var noPlayersLabel: UILabel!
     @IBOutlet weak var playersTableView: UITableView! {
@@ -20,11 +14,11 @@ class PlayersViewController: UIViewController {
         }
     }
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     fileprivate var playersArray = [Player]()
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         
@@ -92,7 +86,7 @@ class PlayersTableViewCell: UITableViewCell {
     
     static let identifier = String(describing: PlayersTableViewCell.self)
     
-    //MARK: - Outlets
+    // MARK: - Outlets
     
     @IBOutlet weak var playerImageView: UIImageView!
     @IBOutlet weak var playerNameLabel: UILabel!

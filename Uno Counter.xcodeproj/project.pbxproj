@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		7EE8A761564CD394015BEC1B /* Pods_Uno_Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */; };
-		BC28BFA11F3DD69D00E45D11 /* SelectPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28BFA01F3DD69D00E45D11 /* SelectPlayersViewController.swift */; };
+		BC30801F1F6FB0A900E9B42A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30801E1F6FB0A900E9B42A /* UIColorExtensions.swift */; };
+		BC3080211F6FB0F300E9B42A /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3080201F6FB0F300E9B42A /* UserDefaultsExtensions.swift */; };
+		BC3080231F6FB13000E9B42A /* AppDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3080221F6FB13000E9B42A /* AppDelegateExtensions.swift */; };
+		BC3080251F6FB16700E9B42A /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3080241F6FB16700E9B42A /* Alerts.swift */; };
+		BC3080291F6FB1D400E9B42A /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3080281F6FB1D400E9B42A /* UIApplicationExtensions.swift */; };
+		BC3080311F6FB34E00E9B42A /* ConvenienceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30802F1F6FB34E00E9B42A /* ConvenienceFunctions.swift */; };
+		BC3080321F6FB34E00E9B42A /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3080301F6FB34E00E9B42A /* Operators.swift */; };
+		BC3080351F6FB6A600E9B42A /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3080341F6FB6A600E9B42A /* StoryboardInstantiable.swift */; };
 		BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC56CD961F3B400C002D0122 /* AppDelegate.swift */; };
-		BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9A1F3B400C002D0122 /* Main.storyboard */; };
 		BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9D1F3B400C002D0122 /* Assets.xcassets */; };
 		BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */; };
 		BC5740CD1F3DA8F800ABFDBC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5740CC1F3DA8F800ABFDBC /* ShadowView.swift */; };
-		BC5740CF1F3DB0E800ABFDBC /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5740CE1F3DB0E800ABFDBC /* CreateGameViewController.swift */; };
 		BC693AE11F3C53CB00EC8564 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693AE01F3C53CB00EC8564 /* Constants.swift */; };
 		BC693B0B1F3C88E100EC8564 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B071F3C88E100EC8564 /* Game+CoreDataClass.swift */; };
 		BC693B0C1F3C88E100EC8564 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B081F3C88E100EC8564 /* Game+CoreDataProperties.swift */; };
 		BC693B0D1F3C88E100EC8564 /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B091F3C88E100EC8564 /* Player+CoreDataClass.swift */; };
 		BC693B0E1F3C88E100EC8564 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B0A1F3C88E100EC8564 /* Player+CoreDataProperties.swift */; };
-		BC693B141F3C981C00EC8564 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B121F3C981C00EC8564 /* AddPlayerViewController.swift */; };
-		BC693B151F3C981C00EC8564 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B131F3C981C00EC8564 /* PlayersViewController.swift */; };
-		BC693B181F3C985800EC8564 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B171F3C985800EC8564 /* GamesViewController.swift */; };
-		BC693B2F1F3CAC4100EC8564 /* PlayerPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC693B2E1F3CAC4100EC8564 /* PlayerPreviewViewController.swift */; };
-		BCD6188E1F3D947E00778015 /* ColorPreviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6188C1F3D947E00778015 /* ColorPreviewTableViewController.swift */; };
-		BCD6188F1F3D947E00778015 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6188D1F3D947E00778015 /* SettingsViewController.swift */; };
+		BCA617451F6FE2F9000148BD /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA617391F6FE2F9000148BD /* CreateGameViewController.swift */; };
+		BCA617461F6FE2F9000148BD /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA6173A1F6FE2F9000148BD /* GamesViewController.swift */; };
+		BCA617471F6FE2F9000148BD /* SelectPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA6173B1F6FE2F9000148BD /* SelectPlayersViewController.swift */; };
+		BCA617481F6FE2F9000148BD /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA6173D1F6FE2F9000148BD /* AddPlayerViewController.swift */; };
+		BCA617491F6FE2F9000148BD /* PlayerPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA6173E1F6FE2F9000148BD /* PlayerPreviewViewController.swift */; };
+		BCA6174A1F6FE2F9000148BD /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA6173F1F6FE2F9000148BD /* PlayersViewController.swift */; };
+		BCA6174B1F6FE2F9000148BD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA617411F6FE2F9000148BD /* RootViewController.swift */; };
+		BCA6174C1F6FE2F9000148BD /* ColorPreviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA617431F6FE2F9000148BD /* ColorPreviewTableViewController.swift */; };
+		BCA6174D1F6FE2F9000148BD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA617441F6FE2F9000148BD /* SettingsViewController.swift */; };
+		BCA6174F1F6FE315000148BD /* GamesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA6174E1F6FE315000148BD /* GamesViewController.storyboard */; };
+		BCA617511F6FE356000148BD /* PlayersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA617501F6FE356000148BD /* PlayersViewController.storyboard */; };
+		BCA617551F6FE387000148BD /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA617541F6FE387000148BD /* SettingsViewController.storyboard */; };
+		BCA617571F6FE4AD000148BD /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA617561F6FE4AD000148BD /* RootViewController.storyboard */; };
 		BCDCDE111F3B49CB00F38C89 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCDE101F3B49CB00F38C89 /* General.swift */; };
 		BCE2D9631F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D9611F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld */; };
 		BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */; };
@@ -34,26 +46,39 @@
 
 /* Begin PBXFileReference section */
 		612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uno_Counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC28BFA01F3DD69D00E45D11 /* SelectPlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlayersViewController.swift; sourceTree = "<group>"; };
+		BC30801E1F6FB0A900E9B42A /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		BC3080201F6FB0F300E9B42A /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		BC3080221F6FB13000E9B42A /* AppDelegateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateExtensions.swift; sourceTree = "<group>"; };
+		BC3080241F6FB16700E9B42A /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		BC3080261F6FB19200E9B42A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC3080281F6FB1D400E9B42A /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		BC30802F1F6FB34E00E9B42A /* ConvenienceFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceFunctions.swift; sourceTree = "<group>"; };
+		BC3080301F6FB34E00E9B42A /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		BC3080341F6FB6A600E9B42A /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		BC56CD931F3B400C002D0122 /* Uno Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uno Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56CD961F3B400C002D0122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC56CD9B1F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC56CD9D1F3B400C002D0122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC56CDA01F3B400C002D0122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC56CDA21F3B400C002D0122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5740CC1F3DA8F800ABFDBC /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		BC5740CE1F3DB0E800ABFDBC /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
 		BC693AE01F3C53CB00EC8564 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC693B071F3C88E100EC8564 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC693B081F3C88E100EC8564 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC693B091F3C88E100EC8564 /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC693B0A1F3C88E100EC8564 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BC693B121F3C981C00EC8564 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
-		BC693B131F3C981C00EC8564 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
-		BC693B171F3C985800EC8564 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
-		BC693B2E1F3CAC4100EC8564 /* PlayerPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPreviewViewController.swift; sourceTree = "<group>"; };
-		BCD6188C1F3D947E00778015 /* ColorPreviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPreviewTableViewController.swift; sourceTree = "<group>"; };
-		BCD6188D1F3D947E00778015 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BCA617391F6FE2F9000148BD /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		BCA6173A1F6FE2F9000148BD /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		BCA6173B1F6FE2F9000148BD /* SelectPlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlayersViewController.swift; sourceTree = "<group>"; };
+		BCA6173D1F6FE2F9000148BD /* AddPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
+		BCA6173E1F6FE2F9000148BD /* PlayerPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPreviewViewController.swift; sourceTree = "<group>"; };
+		BCA6173F1F6FE2F9000148BD /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		BCA617411F6FE2F9000148BD /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		BCA617431F6FE2F9000148BD /* ColorPreviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPreviewTableViewController.swift; sourceTree = "<group>"; };
+		BCA617441F6FE2F9000148BD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BCA6174E1F6FE315000148BD /* GamesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GamesViewController.storyboard; sourceTree = "<group>"; };
+		BCA617501F6FE356000148BD /* PlayersViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayersViewController.storyboard; sourceTree = "<group>"; };
+		BCA617541F6FE387000148BD /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		BCA617561F6FE4AD000148BD /* RootViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
 		BCDCDE101F3B49CB00F38C89 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		BCE2D9621F3B43EF00DA8BB2 /* UnoCounter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnoCounter.xcdatamodel; sourceTree = "<group>"; };
 		BCE2D9641F3B441000DA8BB2 /* DataAccesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccesLayer.swift; sourceTree = "<group>"; };
@@ -83,6 +108,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BC30802B1F6FB2C700E9B42A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC3080341F6FB6A600E9B42A /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC30802E1F6FB34E00E9B42A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC30802F1F6FB34E00E9B42A /* ConvenienceFunctions.swift */,
+				BC3080301F6FB34E00E9B42A /* Operators.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BC56CD8A1F3B400C002D0122 = {
 			isa = PBXGroup;
 			children = (
@@ -105,27 +147,18 @@
 			isa = PBXGroup;
 			children = (
 				BC56CD961F3B400C002D0122 /* AppDelegate.swift */,
-				BCE2D95D1F3B420400DA8BB2 /* Database */,
-				BCE2D95C1F3B420400DA8BB2 /* Controllers */,
+				BC30802E1F6FB34E00E9B42A /* Utils */,
 				BCE2D95E1F3B420400DA8BB2 /* Extensions */,
-				BCE2D95F1F3B420400DA8BB2 /* Protocols */,
+				BC30802B1F6FB2C700E9B42A /* Protocols */,
 				BCE2D9601F3B420400DA8BB2 /* Structs */,
-				BCDCDE041F3B480B00F38C89 /* Resources */,
-				BC5740D21F3DB6D100ABFDBC /* ReusableViews */,
 				BC693AD61F3C43D000EC8564 /* Subclasses */,
-				BC56CD9A1F3B400C002D0122 /* Main.storyboard */,
+				BCE2D95D1F3B420400DA8BB2 /* Database */,
+				BCA617371F6FE2F9000148BD /* Modules */,
 				BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */,
 				BC56CD9D1F3B400C002D0122 /* Assets.xcassets */,
 				BC56CDA21F3B400C002D0122 /* Info.plist */,
 			);
 			path = "Uno Counter";
-			sourceTree = "<group>";
-		};
-		BC5740D21F3DB6D100ABFDBC /* ReusableViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 		BC693AD61F3C43D000EC8564 /* Subclasses */ = {
@@ -147,50 +180,56 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		BC693B111F3C981C00EC8564 /* PlayersViewController */ = {
+		BCA617371F6FE2F9000148BD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BC693B131F3C981C00EC8564 /* PlayersViewController.swift */,
-				BC693B121F3C981C00EC8564 /* AddPlayerViewController.swift */,
-				BC693B2E1F3CAC4100EC8564 /* PlayerPreviewViewController.swift */,
+				BCA617401F6FE2F9000148BD /* RootTabBarController */,
+				BCA617381F6FE2F9000148BD /* Games */,
+				BCA6173C1F6FE2F9000148BD /* Players */,
+				BCA617421F6FE2F9000148BD /* Settings */,
 			);
-			path = PlayersViewController;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		BC693B161F3C985800EC8564 /* GamesViewController */ = {
+		BCA617381F6FE2F9000148BD /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				BC693B171F3C985800EC8564 /* GamesViewController.swift */,
-				BC5740CE1F3DB0E800ABFDBC /* CreateGameViewController.swift */,
-				BC28BFA01F3DD69D00E45D11 /* SelectPlayersViewController.swift */,
+				BCA6174E1F6FE315000148BD /* GamesViewController.storyboard */,
+				BCA6173A1F6FE2F9000148BD /* GamesViewController.swift */,
+				BCA617391F6FE2F9000148BD /* CreateGameViewController.swift */,
+				BCA6173B1F6FE2F9000148BD /* SelectPlayersViewController.swift */,
 			);
-			path = GamesViewController;
+			path = Games;
 			sourceTree = "<group>";
 		};
-		BCDCDE041F3B480B00F38C89 /* Resources */ = {
+		BCA6173C1F6FE2F9000148BD /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				BCA617501F6FE356000148BD /* PlayersViewController.storyboard */,
+				BCA6173F1F6FE2F9000148BD /* PlayersViewController.swift */,
+				BCA6173D1F6FE2F9000148BD /* AddPlayerViewController.swift */,
+				BCA6173E1F6FE2F9000148BD /* PlayerPreviewViewController.swift */,
 			);
-			path = Resources;
+			path = Players;
 			sourceTree = "<group>";
 		};
-		BCDCDE181F3B4FBE00F38C89 /* SettingsViewController */ = {
+		BCA617401F6FE2F9000148BD /* RootTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				BCD6188D1F3D947E00778015 /* SettingsViewController.swift */,
-				BCD6188C1F3D947E00778015 /* ColorPreviewTableViewController.swift */,
+				BCA617561F6FE4AD000148BD /* RootViewController.storyboard */,
+				BCA617411F6FE2F9000148BD /* RootViewController.swift */,
 			);
-			path = SettingsViewController;
+			path = RootTabBarController;
 			sourceTree = "<group>";
 		};
-		BCE2D95C1F3B420400DA8BB2 /* Controllers */ = {
+		BCA617421F6FE2F9000148BD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				BC693B161F3C985800EC8564 /* GamesViewController */,
-				BC693B111F3C981C00EC8564 /* PlayersViewController */,
-				BCDCDE181F3B4FBE00F38C89 /* SettingsViewController */,
+				BCA617541F6FE387000148BD /* SettingsViewController.storyboard */,
+				BCA617441F6FE2F9000148BD /* SettingsViewController.swift */,
+				BCA617431F6FE2F9000148BD /* ColorPreviewTableViewController.swift */,
 			);
-			path = Controllers;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		BCE2D95D1F3B420400DA8BB2 /* Database */ = {
@@ -207,16 +246,14 @@
 		BCE2D95E1F3B420400DA8BB2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BC30801E1F6FB0A900E9B42A /* UIColorExtensions.swift */,
+				BC3080201F6FB0F300E9B42A /* UserDefaultsExtensions.swift */,
+				BC3080221F6FB13000E9B42A /* AppDelegateExtensions.swift */,
+				BC3080241F6FB16700E9B42A /* Alerts.swift */,
+				BC3080281F6FB1D400E9B42A /* UIApplicationExtensions.swift */,
 				BCDCDE101F3B49CB00F38C89 /* General.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		BCE2D95F1F3B420400DA8BB2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		BCE2D9601F3B420400DA8BB2 /* Structs */ = {
@@ -230,6 +267,7 @@
 		FA9E2CB6A1BD595214FA8482 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC3080261F6FB19200E9B42A /* UIKit.framework */,
 				612CF1BD3E2DF7196FC843CB /* Pods_Uno_Counter.framework */,
 			);
 			name = Frameworks;
@@ -248,6 +286,7 @@
 				BC56CD911F3B400C002D0122 /* Resources */,
 				ED41F04719C33F807D072599 /* [CP] Embed Pods Frameworks */,
 				820463CD2EC63CEB33A14C5F /* [CP] Copy Pods Resources */,
+				BC30802A1F6FB23700E9B42A /* Custom Watnings */,
 			);
 			buildRules = (
 			);
@@ -298,9 +337,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA617511F6FE356000148BD /* PlayersViewController.storyboard in Resources */,
 				BC56CDA11F3B400C002D0122 /* LaunchScreen.storyboard in Resources */,
+				BCA617551F6FE387000148BD /* SettingsViewController.storyboard in Resources */,
+				BCA617571F6FE4AD000148BD /* RootViewController.storyboard in Resources */,
 				BC56CD9E1F3B400C002D0122 /* Assets.xcassets in Resources */,
-				BC56CD9C1F3B400C002D0122 /* Main.storyboard in Resources */,
+				BCA6174F1F6FE315000148BD /* GamesViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +382,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC30802A1F6FB23700E9B42A /* Custom Watnings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Custom Watnings";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\"  \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
 		ED41F04719C33F807D072599 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,39 +421,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5740CF1F3DB0E800ABFDBC /* CreateGameViewController.swift in Sources */,
+				BC3080251F6FB16700E9B42A /* Alerts.swift in Sources */,
 				BCE2D9651F3B441000DA8BB2 /* DataAccesLayer.swift in Sources */,
 				BC56CD971F3B400C002D0122 /* AppDelegate.swift in Sources */,
+				BCA617471F6FE2F9000148BD /* SelectPlayersViewController.swift in Sources */,
+				BCA6174B1F6FE2F9000148BD /* RootViewController.swift in Sources */,
 				BC693B0E1F3C88E100EC8564 /* Player+CoreDataProperties.swift in Sources */,
-				BC693B181F3C985800EC8564 /* GamesViewController.swift in Sources */,
 				BCE2D96B1F3B449000DA8BB2 /* CoreDataManager.swift in Sources */,
+				BCA617491F6FE2F9000148BD /* PlayerPreviewViewController.swift in Sources */,
 				BCE2D9631F3B43EF00DA8BB2 /* UnoCounter.xcdatamodeld in Sources */,
 				BC693B0B1F3C88E100EC8564 /* Game+CoreDataClass.swift in Sources */,
+				BCA617461F6FE2F9000148BD /* GamesViewController.swift in Sources */,
+				BC3080321F6FB34E00E9B42A /* Operators.swift in Sources */,
+				BCA617481F6FE2F9000148BD /* AddPlayerViewController.swift in Sources */,
+				BC3080231F6FB13000E9B42A /* AppDelegateExtensions.swift in Sources */,
+				BCA6174A1F6FE2F9000148BD /* PlayersViewController.swift in Sources */,
 				BC693B0D1F3C88E100EC8564 /* Player+CoreDataClass.swift in Sources */,
 				BCDCDE111F3B49CB00F38C89 /* General.swift in Sources */,
-				BC693B141F3C981C00EC8564 /* AddPlayerViewController.swift in Sources */,
-				BC693B2F1F3CAC4100EC8564 /* PlayerPreviewViewController.swift in Sources */,
+				BC3080351F6FB6A600E9B42A /* StoryboardInstantiable.swift in Sources */,
+				BC3080311F6FB34E00E9B42A /* ConvenienceFunctions.swift in Sources */,
+				BC3080211F6FB0F300E9B42A /* UserDefaultsExtensions.swift in Sources */,
+				BCA617451F6FE2F9000148BD /* CreateGameViewController.swift in Sources */,
 				BC693B0C1F3C88E100EC8564 /* Game+CoreDataProperties.swift in Sources */,
+				BCA6174C1F6FE2F9000148BD /* ColorPreviewTableViewController.swift in Sources */,
+				BCA6174D1F6FE2F9000148BD /* SettingsViewController.swift in Sources */,
 				BC693AE11F3C53CB00EC8564 /* Constants.swift in Sources */,
-				BCD6188E1F3D947E00778015 /* ColorPreviewTableViewController.swift in Sources */,
-				BC693B151F3C981C00EC8564 /* PlayersViewController.swift in Sources */,
-				BC28BFA11F3DD69D00E45D11 /* SelectPlayersViewController.swift in Sources */,
+				BC3080291F6FB1D400E9B42A /* UIApplicationExtensions.swift in Sources */,
 				BC5740CD1F3DA8F800ABFDBC /* ShadowView.swift in Sources */,
-				BCD6188F1F3D947E00778015 /* SettingsViewController.swift in Sources */,
+				BC30801F1F6FB0A900E9B42A /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC56CD9A1F3B400C002D0122 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC56CD9B1F3B400C002D0122 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC56CD9F1F3B400C002D0122 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -513,6 +570,11 @@
 				INFOPLIST_FILE = "Uno Counter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"ChameleonFramework\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "SIC.Uno-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -528,6 +590,11 @@
 				INFOPLIST_FILE = "Uno Counter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"ChameleonFramework\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "SIC.Uno-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

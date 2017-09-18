@@ -1,19 +1,13 @@
-//
-//  SettingsViewController.swift
-//  Uno Counter
-//
-//  Created by Alexandr Pavlov on 8/9/17.
-//  Copyright © 2017 Softintercom. All rights reserved.
-//
-
 import UIKit
 
 enum SettingsIndex : Int {
     case appColor = 0
 }
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController, StoryboardInstantiable {
    
+    static var storyboardName = "SettingsViewController"
+    
     //MARK: - Outlets
     
     @IBOutlet weak var settingsTableView: UITableView! {

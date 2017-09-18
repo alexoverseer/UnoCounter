@@ -1,31 +1,21 @@
-//
-//  GamesViewController.swift
-//  Uno Counter
-//
-//  Created by Alexandr Pavlov on 8/9/17.
-//  Copyright © 2017 Softintercom. All rights reserved.
-//
-
 import UIKit
 
-class GamesViewController: UIViewController {
-
-    //MARK: - Outlets
+final class GamesViewController: UIViewController, StoryboardInstantiable {
+    
+    static var storyboardName = "GamesViewController"
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var noGamesLabel: UILabel!
     @IBOutlet weak var gamesTableView: UITableView! {
-        
         didSet {
             gamesTableView.tableFooterView = UIView()
         }
     }
     
-    
-    //MARK: - Properties
-    
     var gamesArray = [Game]()
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         
@@ -47,7 +37,7 @@ class GamesViewController: UIViewController {
     }
 }
 
-//MARK: - Extensions
+// MARK: - Extensions
 
 extension GamesViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -91,7 +81,7 @@ extension GamesViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-//MARK: - Cell
+// MARK: - Cell
 
 class GamesTableViewCell: UITableViewCell {
     
